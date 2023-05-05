@@ -12,7 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsUpToday.Core", "src\Wh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsUpToday.Core.Data", "src\WhatsUpToday.Core.Data\WhatsUpToday.Core.Data.csproj", "{AC453B24-B865-41A0-BA00-B9B908D577AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsUpToday.Core.Windows", "src\WhatsUpToday.Core.Windows\WhatsUpToday.Core.Windows.csproj", "{7224BB90-DE05-4768-B667-55D633531E0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsUpToday.Core.Windows", "src\WhatsUpToday.Core.Windows\WhatsUpToday.Core.Windows.csproj", "{7224BB90-DE05-4768-B667-55D633531E0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
