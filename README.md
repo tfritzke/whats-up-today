@@ -4,9 +4,12 @@ This is an open-source library for .NET.
 ## Core
 + Generic Entity base types.
 + Helpers for working with diffent data types.
++ Helpers for handling expections.
++ Extension methods for strings.
 
 ## Data
 + Generic services; Entity, Data, and Base.
++ AutoSave of entity audit data.
 
 ## History
 
