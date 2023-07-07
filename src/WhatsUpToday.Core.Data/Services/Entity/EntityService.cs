@@ -33,7 +33,7 @@ public abstract class EntityService<TEntity, TId> : IEntityService<TEntity, TId>
             throw new ArgumentNullException(nameof(factory));
 
         DbContext context = factory.CreateContext();
-        Context = context ?? throw new ArgumentNullException("context");
+        Context = context ?? throw new NullReferenceException("context");
 
         Set = new EntitySet();
 
