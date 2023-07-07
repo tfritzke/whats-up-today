@@ -1,4 +1,8 @@
 
+**1.0.4**
++ Update to Net Core 7.0.8.
++ Minor bug fixes.
+
 **1.0.3**
 * Core:
   * Add exception helper class Ensure.
