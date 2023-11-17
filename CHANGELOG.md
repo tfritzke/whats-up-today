@@ -1,6 +1,9 @@
 
+**1.1.0**
++ Update to Net 8.0.
+
 **1.0.4**
-+ Update to Net Core 7.0.8.
++ Update to Net 7.0.8.
 + Minor bug fixes.
 
 **1.0.3**
