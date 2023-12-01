@@ -29,7 +29,7 @@ public static class DbContextExtensions
         if (context == null) throw new ArgumentNullException(nameof(context));
         var entityType = context.Model.FindEntityType(typeof(T));
         var value = enable ? "ON" : "OFF";
-        context.Database.ExecuteSqlRaw($"SET IDENTITY_INSERT {entityType.GetSchema()}.{entityType.GetTableName()} {value}");
+        context.Database.ExecuteSql($"SET IDENTITY_INSERT {entityType.GetSchema()}.{entityType.GetTableName()} {value}");
     }
 
     public static void SaveChangesWithIdentityInsert<T>([NotNull] this DbContext context)
@@ -47,7 +47,7 @@ public static class DbContextExtensions
         if (context == null) throw new ArgumentNullException(nameof(context));
         var entityType = context.Model.FindEntityType(typeof(T));
         var value = enable ? "ON" : "OFF";
-        await context.Database.ExecuteSqlRawAsync($"SET IDENTITY_INSERT {entityType.GetSchema()}.{entityType.GetTableName()} {value}");
+        await context.Database.ExecuteSqlAsync($"SET IDENTITY_INSERT {entityType.GetSchema()}.{entityType.GetTableName()} {value}");
     }
 
     public static async Task SaveChangesWithIdentityInsertAsync<T>([NotNull] this DbContext context)
